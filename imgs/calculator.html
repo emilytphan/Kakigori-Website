@@ -1,0 +1,58 @@
+<!--
+Name: Emily Phan
+Date: 9/3/24
+Section: CSE 190E
+calculator.html for calculator
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>getrich!</title>
+        <script src="calculator.js"></script>
+        <link href="calculator.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <div id="heading1">
+            <h1>Want to Get Rich?</h1>
+        </div>
+        <div id="heading2">
+            <h2> Invest Now!</h2>
+        </div>
+        </header>
+        <main>
+    <section>
+        <div id="whatis">
+            <h3> What is it? </h3>
+        </div>
+        <div id="description">
+            <p>This is an interest calculator that'll help you calculate how long it will take to
+            reach your desired financial goal. By entering your current amount of money,
+            your future amount, and an unlimited amount of interest rates,
+            you can see how long it will take to achieve your goal. The calculator uses these
+            inputs to compute the number of years required based on the specified interest rates.
+            All you do is input the amount you currently have, the amount you want in the future,
+            and the interest rates of your choice. Try it now! </p>
+        </div>
+    </section>
+        <button id="redo">Reset</button>
+        <div class="calculations">
+        <h4>Interest Calculator:</h4>
+        <label for="current">How much do you currently have? </label>
+        <input type="number" id="current">
+        <br>
+        <label for="final">How much do you want in the future? </label>
+        <input type="number" id="final">
+        <br>
+        <label for="rate">Interest Rate: (can enter multiple seperate by commas)</label>
+        <input type="text" id="rate">
+        <br>
+        <button id="calculate">Compute Years!</button>
+        <p id="answer"></p>
+    </div>
+        </main>
+        <footer>
+            All image and Text on this page © Emily Phan. For image Citations, refer to file source.
+        </footer>
+    </body>
+</html>
