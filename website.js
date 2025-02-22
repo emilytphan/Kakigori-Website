@@ -27,12 +27,48 @@ document.addEventListener('DOMContentLoaded', function() {
         currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
     }
 
-    // Change background every 5 seconds (5000ms)
+    // Change background every 3 seconds (3000ms)
     setInterval(changeBackground, 3000);
 
     // Initially set the first background image
     changeBackground();
 
-    const buttonGroup = document.querySelector('.button-group');
-    buttonGroup.classList.add('fade-in');
+    // Get the button2 element for fade-in on scroll
+    const button2 = document.querySelector('.cta-button2');
+
+    // Create an intersection observer to detect when the button comes into view
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the 'visible' class to make the button fade in
+                button2.classList.add('visible');
+                // Once the button is visible, stop observing it
+                observer.unobserve(button2);
+            }
+        });
+    }, {
+        threshold: 0.5 // Trigger when 50% of the button is visible
+    });
+
+    // Start observing the button
+    observer.observe(button2);
+
+    // Smooth scrolling with offset (for About Us and Contact links)
+    const links = document.querySelectorAll('a[href^="#about"]');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            // Prevent default anchor click behavior
+            e.preventDefault();
+
+            // Get the target element (section)
+            const target = document.querySelector(this.getAttribute('href'));
+
+            // Scroll with an offset of 100px (change this value as needed)
+            window.scrollTo({
+                top: target.offsetTop - 100, // Adjust this value to move it up
+                behavior: 'smooth'
+            });
+        });
+    });
 });
