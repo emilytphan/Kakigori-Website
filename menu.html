@@ -6,97 +6,92 @@
     <script src="website.js"></script> 
     <link href="website.css" rel="stylesheet">  <!-- Your CSS file -->
     <style>
-        body {
-            font-family: 'Acme', sans-serif;
-            background-color: #f5f1e7;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container-website {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 90%;
-        max-width: 2000px;
-        margin: 0 auto;
-        }
-
+  
+        /* Menu Section */
         .menu-section {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             width: 100%;
         }
 
         .menu-container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 40px;
         }
 
         .menu-category h2 {
-            font-size: 36px;
+            font-family: 'Satisfy', cursive;
+            font-size: 40px;
             text-align: center;
             color: #6a0572;
             margin-bottom: 20px;
         }
 
-        .bingsu-grid {
+        .menu-images {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
             gap: 20px;
-            padding: 20px;
+            width: 40%;
         }
 
-        .bingsu-item {
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s;
-            width: 250px;
-        }
-
-        .bingsu-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .bingsu-item img {
+        .menu-images img {
             width: 100%;
+            max-width: 250px; /* Adjusted image size */
             height: auto;
-            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Adjust size for specific image */
-        .bingsu-item img[src*="image1 (6).jpeg"] {
-            width: 200px;
-            height: auto;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto;
+        .menu-text {
+            width: 50%;
+            text-align: left;
         }
 
-        .bingsu-item h3 {
-            font-size: 22px;
-            color: #333;
-            margin: 15px 0 10px;
+        .menu-text h3 {
+            font-size: 32px; /* Increased text size */
+            margin-bottom: 10px;
         }
 
-        .bingsu-item p {
-            font-size: 16px;
-            color: #777;
-            padding: 0 10px 20px;
+        .menu-text ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-text li {
+            font-size: 20px; /* Increased text size */
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .menu-text li span {
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu-images {
+                width: 100%;
+                gap: 10px;
+            }
+            .menu-text {
+                width: 100%;
+                text-align: center;
+            }
+            .menu-text li {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -126,62 +121,25 @@
     <!-- Menu Section -->
     <section class="menu-section">
         <div class="menu-container">
-            <!-- Classic Bingsu Section -->
-            <div class="menu-category">
-                <h2>Classic Bingsu</h2>
-                <div class="bingsu-grid classic-grid">
-                    <div class="bingsu-item">
-                        <img src="./imgs/image1 (6).jpeg" alt="Mango Sticky Rice">
-                        <h3>Mango Sticky Rice</h3>
-                        <p>Description for Classic 1</p>
-                    </div>
-                    <div class="bingsu-item">
-                        <img src="./imgs/flowers.jpg" alt="Mango Cheescake">
-                        <h3>Mango Cheesecake</h3>
-                        <p>Description for Classic 2</p>
-                    </div>
-                    <div class="bingsu-item">
-                        <img src="./imgs/flowers.jpg" alt="S.O.C.">
-                        <h3>S.O.C.</h3>
-                        <p>Description for Classic 3</p>
-                    </div>
-                    <div class="bingsu-item">
-                        <img src="./imgs/flowers.jpg" alt="Choco Malt & Oreo">
-                        <h3>Choco Malt & Oreo</h3>
-                        <p>Description for Classic 4</p>
-                    </div>
-                    <div class="bingsu-item">
-                        <img src="./imgs/flowers.jpg" alt="Watermelon">
-                        <h3>Watermelon</h3>
-                        <p>Description for Classic 5</p>
-                    </div>
-                    <div class="bingsu-item">
-                        <img src="./imgs/flowers.jpg" alt="Edible Flowers">
-                        <h3>Edible Flowers</h3>
-                        <p>Description for Classic 6</p>
-                    </div>
-                </div>
+            <!-- Menu Images Section -->
+            <div class="menu-images">
+                <img src="./imgs/kakigorii.png" alt="Mango Sticky Rice Mini Bingsu" />
+                <img src="./imgs/flowers.jpg" alt="Another Menu Image" />
             </div>
-    
-            <!-- Mini Bingsu Section -->
-            <div class="menu-category">
-                <h2>Mini Bingsu</h2>
-                <div class="bingsu-grid mini-grid">
-                    <div class="bingsu-item">
-                        <img src="./imgs/matcha.jpg" alt="Matcha Bingsu">
-                        <h3>Matcha</h3>
-                        <p>Description for Matcha</p>
-                    </div>
-                    <div class="bingsu-item">
-                        <img src="./imgs/mango.jpg" alt="Mango Bingsu">
-                        <h3>Mango Sticky Rice</h3>
-                        <p>Description for Mango Sticky Rice</p>
-                    </div>
-                    <div class="bingsu-item">
-                        <img src="./imgs/coconut.jpg" alt="Coconut Bingsu">
-                        <h3>Coconut</h3>
-                        <p>Description for Coconut</p>
-                    </div>
+
+            <!-- Menu Text Section -->
+            <div class="menu-text">
+                <h3>Menu Items</h3>
+                <ul>
+                    <li><span>Mango Sticky Rice</span> 6.00</li>
+                    <li><span>Mango Cheesecake</span> 6.50</li>
+                    <li><span>S.O.C.</span> 5.50</li>
+                    <li><span>Choco Malt & Oreo</span> 5.00</li>
+                    <li><span>Watermelon</span> 4.50</li>
+                    <li><span>Edible Flowers</span> 5.00</li>
+                </ul>
+                <div class="button-wrapper">
+                    <a href="#" class="cta-button2">Order Now</a>
                 </div>
             </div>
         </div>
