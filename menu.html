@@ -3,29 +3,124 @@
 <head>
     <title>Kaki-gori Dessert Café</title>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Satisfy&display=swap" rel="stylesheet">
-
-    <script src="website.js"></script>
+    <script src="website.js"></script> 
     <link href="website.css" rel="stylesheet">  <!-- Your CSS file -->
+    <style>
+        body {
+            font-family: 'Acme', sans-serif;
+            background-color: #f5f1e7;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container-website {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        max-width: 2000px;
+        margin: 0 auto;
+        }
+
+        .menu-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .menu-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-category h2 {
+            font-size: 36px;
+            text-align: center;
+            color: #6a0572;
+            margin-bottom: 20px;
+        }
+
+        .bingsu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .bingsu-item {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+            width: 250px;
+        }
+
+        .bingsu-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .bingsu-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Adjust size for specific image */
+        .bingsu-item img[src*="image1 (6).jpeg"] {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .bingsu-item h3 {
+            font-size: 22px;
+            color: #333;
+            margin: 15px 0 10px;
+        }
+
+        .bingsu-item p {
+            font-size: 16px;
+            color: #777;
+            padding: 0 10px 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar Section -->
-    <nav class="navbar">
-        <!-- Left Links -->
-        <ul class="nav-links-left">
-            <li><a href="website.html">HOME</a></li>
-            <li><a href="menu.html">MENU</a></li>
-        </ul>
-
-        <!-- Logo -->
-        <div class="logo">
-            <img src="./imgs/kakigori.png" alt="Kakigori Logo">
+    <nav class="navbar-website">
+        <div class="container-website">
+            <!-- Left side links -->
+            <ul class="nav-links-left-website">
+                <li><a href="website.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+            </ul>
+    
+            <!-- Center logo -->
+            <div class="logo-website">
+                <img src="./imgs/kakigori.png" alt="Kakigori Logo">
+            </div>
+    
+            <!-- Right side links -->
+            <ul class="nav-links-right-website">
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </div>
-
-        <!-- Right Links -->
-        <ul class="nav-links-right">
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
     </nav>
 
     <!-- Menu Section -->
@@ -36,19 +131,34 @@
                 <h2>Classic Bingsu</h2>
                 <div class="bingsu-grid classic-grid">
                     <div class="bingsu-item">
-                        <img src="./imgs/classic1.jpg" alt="Classic Bingsu">
-                        <h3>Classic 1</h3>
+                        <img src="./imgs/image1 (6).jpeg" alt="Mango Sticky Rice">
+                        <h3>Mango Sticky Rice</h3>
                         <p>Description for Classic 1</p>
                     </div>
                     <div class="bingsu-item">
-                        <img src="./imgs/classic2.jpg" alt="Classic Bingsu">
-                        <h3>Classic 2</h3>
+                        <img src="./imgs/flowers.jpg" alt="Mango Cheescake">
+                        <h3>Mango Cheesecake</h3>
                         <p>Description for Classic 2</p>
                     </div>
                     <div class="bingsu-item">
-                        <img src="./imgs/classic3.jpg" alt="Classic Bingsu">
-                        <h3>Classic 3</h3>
+                        <img src="./imgs/flowers.jpg" alt="S.O.C.">
+                        <h3>S.O.C.</h3>
                         <p>Description for Classic 3</p>
+                    </div>
+                    <div class="bingsu-item">
+                        <img src="./imgs/flowers.jpg" alt="Choco Malt & Oreo">
+                        <h3>Choco Malt & Oreo</h3>
+                        <p>Description for Classic 4</p>
+                    </div>
+                    <div class="bingsu-item">
+                        <img src="./imgs/flowers.jpg" alt="Watermelon">
+                        <h3>Watermelon</h3>
+                        <p>Description for Classic 5</p>
+                    </div>
+                    <div class="bingsu-item">
+                        <img src="./imgs/flowers.jpg" alt="Edible Flowers">
+                        <h3>Edible Flowers</h3>
+                        <p>Description for Classic 6</p>
                     </div>
                 </div>
             </div>
@@ -72,11 +182,9 @@
                         <h3>Coconut</h3>
                         <p>Description for Coconut</p>
                     </div>
-                    <!-- Add more items as needed -->
                 </div>
             </div>
         </div>
     </section>
-    
 </body>
 </html>
