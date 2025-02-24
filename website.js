@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Array of background image URLs
     const images = [
         './imgs/pic2.jpg',
-        './imgs/pic3.jpg',
-        './imgs/pic44.jpg',
+        './imgs/pic333.png',
+        './imgs/pic444.png',
         './imgs/pic5.jpg'
     ];
 

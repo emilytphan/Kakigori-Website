@@ -4,95 +4,251 @@
     <title>Kakigori Dessert Café</title>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Satisfy&display=swap" rel="stylesheet">
     <script src="website.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="website.css" rel="stylesheet">  <!-- Your CSS file -->
     <style>
-  
-        /* Menu Section */
-        .menu-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .menu-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 40px;
-        }
-
-        .menu-category h2 {
-            font-family: 'Satisfy', cursive;
-            font-size: 40px;
+    html {
+    scroll-behavior: smooth;
+    }
+        /* Menu Header and Categories */
+        .menu-header {
             text-align: center;
-            color: #6a0572;
+            font-family: 'Cambria';
+            font-size: 30px;
+            color: #000000;
             margin-bottom: 20px;
         }
 
-        .menu-images {
+        .menu-categories {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
-            width: 40%;
-        }
-
-        .menu-images img {
-            width: 100%;
-            max-width: 250px; /* Adjusted image size */
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .menu-text {
-            width: 50%;
-            text-align: left;
-        }
-
-        .menu-text h3 {
-            font-size: 32px; /* Increased text size */
-            margin-bottom: 10px;
-        }
-
-        .menu-text ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .menu-text li {
-            font-size: 20px; /* Increased text size */
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-        }
-
-        .menu-text li span {
+            font-size: 18px;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .menu-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .menu-images {
-                width: 100%;
-                gap: 10px;
-            }
-            .menu-text {
-                width: 100%;
-                text-align: center;
-            }
-            .menu-text li {
-                justify-content: center;
-            }
+        .menu-categories a {
+            text-decoration: none;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
         }
+
+        .menu-categories a:hover {
+            color: #6a0572;
+            border-color: #6a0572;
+        }
+
+.menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 40px;
+    scroll-margin-top: 100px; /* Adjust this value if needed */
+}
+
+/* Ensure images are consistent in size and alignment */
+.menu-section img {
+    display: block;
+    height: 421.3px;
+    width: 253.55px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+/* Standardize text container for both sections */
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    max-width: 400px;
+}
+
+/* Fix header alignment so it's the same for both sections */
+.menu-text h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* List styling remains consistent */
+.menu-text ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -10px;
+}
+
+/* Ensure both lists are aligned */
+.menu-text li {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+    margin-bottom: 5px;
+}
+
+/* Move Sweet Croffles section slightly to the right */
+#sweet-croffles {
+    max-width: 900px;
+    margin: 0 auto;
+    transform: translateX(40px);
+}
+
+#sweet-croffles h2 {
+    font-size: 40px; 
+    margin-right: 60px;
+}
+#savory-croffles {
+    max-width: 900px;
+    margin: 0 auto;
+    transform: translateX(40px);
+}
+
+#savory-croffles h2 {
+    font-size: 40px; 
+    margin-right: 60px;
+}
+
+#coffee ul {
+    width: 450px; /* Ensure list width is wide enough */
+}
+
+#coffee li {
+    display: flex;
+    justify-content: space-between; /* Spreads item name & price */
+    width: 450px; /* Matches width of the list */
+}
+#coffee {
+    max-width: 900px;
+    margin: 0 auto;
+    transform: translateX(40px);
+}
+
+#non-coffee ul {
+    width: 450px; /* Ensure list width is wide enough */
+}
+
+#non-coffee li {
+    display: flex;
+    justify-content: space-between; /* Spreads item name & price */
+    width: 450px; /* Matches width of the list */
+}
+#non-coffee {
+    max-width: 900px;
+    margin: 0 auto;
+    transform: translateX(40px);
+    margin-bottom: 50px;
+}
+
+#softserve h3 {
+    margin-top: -20px;
+    font-size: 18px;
+}
+#softserve h4 {
+    margin-top: -10px;
+}
+
+#softserve {
+
+    max-width: 900px;
+    margin: 0 auto;
+    transform: translateX(130px);
+}
+
+#softserve .menu-text {
+    width: 100%; /* Allows content to take up full width */
+    max-width: 800px; /* Expands container */
+    text-align: left; /* Aligns text for a cleaner layout */
+}
+
+.toppings-container {
+    display: flex;
+    justify-content: space-between; /* Ensures two columns side by side */
+    gap: 50px; /* Adds more space between columns */
+    max-width: 800px;
+    margin: 0 auto;
+    margin-left: 1px;
+    flex-wrap: nowrap; 
+}
+
+.toppings-column {
+    list-style: none;
+    padding: 0;
+    width: 50%; /* Ensures each column takes half the space */
+    text-align: left;
+}
+.toppings-column li {
+    display: flex;
+    justify-content: space-between; /* Ensures names and prices align properly */
+    width: 100%;
+    white-space: nowrap;
+    font-size: 18px;
+    gap: 40px; /* Adds more space between topping name and price */
+}
+
+/* Add space between name and price */
+.toppings-column li span:first-child {
+    padding-right: 10px; /* Increases space between name and price */
+}
+.flavors li {
+    display: flex;
+    justify-content: space-between; /* Ensures name and price are spaced apart */
+    width: 100%;
+    white-space: nowrap;
+    gap: 208px;
+    font-size: 18px;
+}
+
+/* Ensure flavor price aligns with the rightmost column */
+.flavors li span:last-child {
+    text-align: right;
+    width: 120px; /* Adjust to match the toppings column */
+    display: inline-block;
+}
+
+
+.sauce li {
+    display: flex;
+    justify-content: space-between; /* Ensures names and prices align properly */
+    width: 100%;
+    white-space: nowrap;
+    gap: 40px;
+    font-size: 18px;
+}
+.sauce-column {
+    list-style: none;
+    padding: 0;
+    width: 50%; 
+    text-align: left;
+}
+.sauce {
+    display: flex;
+    justify-content: space-between; /* Ensures two columns side by side */
+    gap: 40px; /* Adds more space between columns */
+    max-width: 800px;
+    margin: 0 auto;
+    margin-left: 1px;
+    flex-wrap: nowrap; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
     </style>
 </head>
 <body>
@@ -112,37 +268,193 @@
     
             <!-- Right side links -->
             <ul class="nav-links-right-website">
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="website.html#about">ABOUT US</a></li>
+                <li><a href="website.html#contact">CONTACT</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Menu Section -->
-    <section class="menu-section">
-        <div class="menu-container">
-            <!-- Menu Images Section -->
-            <div class="menu-images">
-                <img src="./imgs/kakigorii.png" alt="Mango Sticky Rice Mini Bingsu" />
-                <img src="./imgs/flowers.jpg" alt="Another Menu Image" />
-            </div>
-
-            <!-- Menu Text Section -->
-            <div class="menu-text">
-                <h3>Menu Items</h3>
-                <ul>
-                    <li><span>Mango Sticky Rice</span> 6.00</li>
-                    <li><span>Mango Cheesecake</span> 6.50</li>
-                    <li><span>S.O.C.</span> 5.50</li>
-                    <li><span>Choco Malt & Oreo</span> 5.00</li>
-                    <li><span>Watermelon</span> 4.50</li>
-                    <li><span>Edible Flowers</span> 5.00</li>
-                </ul>
-                <div class="button-wrapper">
-                    <a href="#" class="cta-button2">Order Now</a>
-                </div>
-            </div>
+    <!-- Menu Header & Categories -->
+    <section class="menu-header">
+        <h1>Our Menu</h1>
+        <div class="menu-categories">
+            <a href="#bingsu">Bingsu</a> |
+            <a href="#sweet-croffles">Sweet Croffles/Shokupan</a> |
+            <a href="#softserve">SoftServe</a> |
+            <a href="#savory-croffles">Savory Croffles/Shokupan</a> |
+            <a href="#coffee">Coffee</a> |
+            <a href="#tea">Tea</a> |
+            <a href="#non-coffee">Non-Coffee</a>
         </div>
     </section>
+
+    <!-- Bingsu Section -->
+    <section id="bingsu" class="menu-section">
+        <img src="./imgs/bingsy.png" alt="Bingsu Image">
+        <div class="menu-text">
+            <h2>Bingsu</h2>
+            <ul>
+                <li><span>Mango Sticky Rice</span> S $13 | L $17</li>
+                <li><span>S.O.C.</span> S $12 | L $17</li>
+                <li><span>Mango Cheesecake</span> S $12| L $17</li>
+                <li><span>Choco Malt & Oreo</span> S $12 | L $17</li>
+                <li><span>Watermelon</span> S $12 | L $19</li>
+                <li><span>Thai Tea</span> S $11</li>
+                <li><span>Taro</span> S $11</li>
+                <li><span>Matcha</span> S $11</li>
+                <li><span>Vietnamese Coffee</span> S $11</li>
+                <li><span>Coconut</span>S $12</li>
+                <li><span>Edible Flowers</span> S $13.50</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sweet Croffles Section -->
+    <section id="sweet-croffles" class="menu-section">
+        <img src="./imgs/croffles.png" alt="Croffle Image">
+        <div class="menu-text"> 
+            <h2>Sweet Croffles/Shokupan</h2>
+            <ul>
+                <li><span>Pandan Lava</span> $11</li>
+                <li><span>Thai Tea Lava</span> $11</li>
+                <li><span>Black Lava</span> $11</li>
+                <li><span>Mango Sticky Rice</span> $13</li>
+                <li><span>Strawberries & Cheesecake</span> $12</li>
+                <li><span>Malt & Oreo Marshmallow</span> $11</li>
+                <li><span>Matcha Redbean & Mochi</span> $11</li>
+                <li><span>Sweet Taro & Redbean</span> $11</li>
+                <li><span>Black Sesame Redbean & Mochi</span> $11</li>
+            </ul>
+        </div>
+    </section>
+
+        <section id="softserve" class="menu-section">
+            <img src="./imgs/softserve.png" alt="Croffle Image">
+            <div class="menu-text"> 
+                <h2>Softserve</h2>
+                <h3>(Only Available at SC location) </h3>
+                <h4>Flavors:</h4>
+                <ul class="flavors">
+                    <li><span>Vanilla</span> <span>$5.75</span></li>
+                    <li><span>Pineapple</span> <span>$5.75</span></li>
+                </ul>
+                
+                <h4>Toppings:</h4>
+                <div class="toppings-container">
+                    <ul class="toppings-column">
+                        <li><span>Mango</span> <span>$3</span></li>
+                        <li><span>Sticky Rice</span> <span>$3</span></li>
+                        <li><span>Strawberry</span> <span>$3</span></li>
+                        <li><span>Watermelon</span> <span>$3</span></li>
+                        <li><span>Mochi</span> <span>$3</span></li>
+                        <li><span>Redbean</span> <span>$2.5</span></li>
+                        <li><span>Coconut</span> <span>$3</span></li>
+                    </ul>
+                    <ul class="toppings-column">
+                        <li><span>Taro</span> <span>$2.5</span></li>
+                        <li><span>Oreo</span> <span>$2</span></li>
+                        <li><span>Lychee Jelly</span> <span>$1.5</span></li>
+                        <li><span>Mango Jelly</span> <span>$1.5</span></li>
+                        <li><span>Rainbow Jelly </span> <span> $1.5</span></li>
+                        <li><span>Cheesecake</span> <span>$2.5</span></li>
+                    </ul>
+                </div>
+                
+                <h4>Flavored Condensed Milk:</h4>
+                <div class="sauce">
+                    <ul class="sauce-column">
+                        <li><span>Thai Tea</span> $1</li>
+                        <li><span>Black Sesame</span> $1</li>
+                        <li><span>Strawberry</span>$1</li>
+                        <li><span>Matcha</span> $1</li>
+                        <li><span>Chocolate Malt</span> $1</li>
+                    </ul>
+                    <ul class="sauce-column">
+                        <li><span>Coconut Milk</span>$1</li>
+                        <li><span>Vietnamese Cofee</span>$1</li>
+                        <li><span>Ube</span> $1</li>
+                        <li><span>Plain</span>$1</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+    <section id="savory-croffles" class="menu-section">
+        <img src="./imgs/crofflesS.png" alt="Croffle Image">
+        <div class="menu-text"> 
+            <h2>Savory Croffles/Shokupan</h2>
+            <ul>
+                <li><span>Takoyakii</span> $13</li>
+                <li><span>Floss It</span> $11</li>
+                <li><span>Cheesy Bacon</span> $11</li>
+                <li><span>Cheesy Potato</span> $11</li>
+                <li><span>Corn Cheese</span> $11</li>
+                <li><span>Cheesy Ham</span> $11</li>
+                <li><span>Cucumber Cream Cheese</span> $9.50</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="coffee" class="menu-section">
+        <img src="./imgs/coffee.png" alt="Croffle Image">
+        <div class="menu-text"> 
+            <h2>Coffee</h2>
+            <ul>
+                <li><span>Latte/Cappucino</span> S $4.75 | M $5 | L $5.5</li>
+                <li><span>Choco Malt Mocha</span> S $5.25 | M $5.75 | L $6.25</li>
+                <li><span>Ube-long-to-me Latte</span> S $5.25 | M $5.75 | L $6.25</li>
+                <li><span>Pandan Latte</span> S $5.25 | M $5.75 | L $6.25</li>
+                <li><span>Matcha Espresso</span> S $5.50 | M $6.25 | L $6.75</li>
+                <li><span>Black Sesame Espresso</span> S $5.50 | M $6.25 | L $6.75</li>
+                <li><span>Bingsu Affogato</span> S $7.50 | M $8.25 | L $8.70</li>
+                <li><span>Americano</span> $4</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="tea" class="menu-section">
+        <img src="./imgs/tea.png" alt="Croffle Image">
+        <div class="menu-text"> 
+            <h2>Tea</h2>
+            <ul>
+                <li><span>Classic</span> $6</li>
+                <li><span>Cheese Cream Tea</span> $6.50</li>
+                <li><span>Jasmine Green Milk Tea</span> $6</li>
+                <li><span>Brown Sugar Classic</span> $6</li>
+                <li><span>Super Fruit Tea</span> $7</li>
+                <li><span>Lemon Unbeelievable</span> $6.50</li>
+                <li><span>P.L.G</span>$6</li>
+                <li><span>Lady Bug</span> $6</li>
+                <li><span>White Rabbit Milk Tea</span>$6</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="non-coffee" class="menu-section">
+        <img src="./imgs/noncoffee.png" alt="Croffle Image">
+        <div class="menu-text"> 
+            <h2>Non-Coffee</h2>
+            <ul>
+                <li><span>Ovaltine Latte</span> S $4.75 | M $5.5 | L $6.25</li>
+                <li><span>Black Sesame Latte</span> S $4.75 | M $5.5 | L $6.25</li>
+                <li><span>Hot Chocolate</span> S $4 | M $4.5 | L $5</li>
+                <li><span>London Fog Latte</span> S $4.75 | M $5.50 | L $6</li>
+                <li><span>Bangkok Fog Latte</span> S $4.75 | M $5.50 | L $6</li>
+                <li><span>Tokyo Fog Latte</span> S $4.75 | M $5.50 | L $6</li>
+                <li><span>SeaSalt Cream Top Thai Tea</span> $6</li>
+                <li><span>Lychee Thai Tea</span> $6</li>
+                <li><span>Coconut Milk Thai Tea</span> $6</li>
+                <li><span>Mango Yakult</span>$7</li>
+                <li><span>Strawberries Yakult</span>$7</li>
+                <li><span>Hot Tea</span>$3.5</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-website">
+            <p>&copy; 2024 Kakigori Dessert Café. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
