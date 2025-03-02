@@ -42,7 +42,7 @@
             border-color: #6a0572;
         }
 
-        @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .menu-section img {
         display: none !important;
     }
@@ -60,7 +60,7 @@
         max-width: 100%;
         text-align: left;
         margin-left: 0;
-        font-size: 16px;
+        font-size: 18px;
     }
     .menu-text h2 {
         font-size: 22px;
@@ -72,7 +72,7 @@
         width: 100%;
     }
     .menu-text li {
-        font-size: 16px;
+        font-size: 18px;
         display: flex;
         justify-content: flex-start;
         width: 100%;
@@ -83,13 +83,10 @@
         width: auto;
         padding: 0 5px;
     }
-
-    /* Hide all prices in menu */
     .menu-text li span:last-child {
         display: none;
     }
     
-    /* Align Coffee, Non-Coffee, and Softserve properly */
     #coffee, #non-coffee, #softserve {
         text-align: left;
         max-width: 90%;
@@ -105,10 +102,6 @@
         margin: 0 auto;
     }
     
-    #softserve ul {
-        margin-right: 0;
-    }
-    
     #coffee ul, #non-coffee ul {
         padding: 0;
         text-align: left;
@@ -118,7 +111,7 @@
     }
     
     #coffee li, #non-coffee li, #softserve li {
-        font-size: 16px;
+        font-size: 18px;
         display: flex;
         justify-content: flex-start;
         width: 100%;
@@ -128,19 +121,20 @@
     /* Adjust Softserve Layout */
     .toppings-container, .sauce {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         text-align: left;
-        gap: 3px;
+        gap: 30px;
         max-width: 100%;
+        justify-content: space-between;
     }
     .toppings-container ul, .sauce ul {
-        width: 100%;
+        width: 48%;
         text-align: left;
         padding: 0;
     }
     .flavors li, .toppings-column li, .sauce-column li {
         margin-bottom: 2px;
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
