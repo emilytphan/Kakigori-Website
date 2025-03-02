@@ -76,7 +76,6 @@ img {
     height: auto;
 }
 
-/* Mobile Navigation */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -93,26 +92,21 @@ img {
 
 @media screen and (max-width: 768px) {
     .navbar-website {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        padding: 15px;
     }
 
     .nav-links-left-website,
     .nav-links-right-website {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .nav-links-left-website.active,
-    .nav-links-right-website.active {
         display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        padding: 0;
+        text-align: center;
     }
 
     .menu-toggle {
@@ -120,7 +114,7 @@ img {
     }
 
     .logo-website img {
-        width: 100px;
+        width: 150px;
     }
 }
 
@@ -224,20 +218,20 @@ img {
 
 @media screen and (max-width: 768px) {
     .hero h1 {
-        font-size: 30px;
+        font-size: 34px;
     }
     .hero .description {
-        font-size: 16px;
-        max-width: 90%;
+        font-size: 18px;
+        max-width: 80%;
     }
     .button-group {
-        flex-direction: column;
-        gap: 8px;
+        flex-direction: row;
+        gap: 6px;
     }
     .cta-button {
-        font-size: 16px;
-        padding: 8px 16px;
-        max-width: 200px;
+        font-size: 14px;
+        padding: 6px 12px;
+        max-width: 160px;
     }
 }
 .cta-button {
