@@ -92,32 +92,32 @@ img {
 
 @media screen and (max-width: 768px) {
     .navbar-website {
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 15px;
+        padding: 10px 20px;
     }
 
     .nav-links-left-website,
     .nav-links-right-website {
         display: flex;
-        flex-direction: row;
-        position: static;
-        width: auto;
-        background-color: transparent;
-        padding: 0;
-        text-align: center;
-        font-size: 14px;
+        gap: 10px;
     }
 
-    .menu-toggle {
-        display: flex;
+    .nav-links-left-website {
+        justify-content: flex-start;
+    }
+
+    .nav-links-right-website {
+        justify-content: flex-end;
     }
 
     .logo-website img {
-        width: 100px;
+        width: 120px;
     }
 }
+
 
 /* Hero Section */
 .container-hero {
@@ -223,11 +223,14 @@ img {
     }
     .hero .description {
         font-size: 18px;
-        max-width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: center;
     }
     .button-group {
         flex-direction: row;
         gap: 6px;
+        justify-content: center;
     }
     .cta-button {
         font-size: 12px;
@@ -333,7 +336,7 @@ img {
 @media screen and (max-width: 768px) {
     #featured-menu img {
         object-position: right;
-        transform: scale(1.5);
+        transform: scale(1);
     }
 
     .menu-description {
