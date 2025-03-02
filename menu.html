@@ -4,7 +4,7 @@
     <title>Kakigori Dessert Café</title>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Satisfy&display=swap" rel="stylesheet">
     <script src="website.js"></script> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="website.css" rel="stylesheet">  <!-- Your CSS file -->
     <style>
     html {
@@ -44,23 +44,21 @@
 
  @media screen and (max-width: 768px) {
     .menu-section img {
-        display:none;
+        display: none !important;
     }
     .menu-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
         width: 100%;
         max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10px; /* Ensures no unwanted space */
     }
     .menu-text {
-        width: 90%;
-        max-width: 600px;
+        width: 100%;
+        max-width: 100%;
         text-align: center;
     }
     .menu-text h2 {
-        font-size: 28px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
     .menu-text ul {
@@ -69,7 +67,7 @@
         width: 100%;
     }
     .menu-text li {
-        font-size: 18px;
+        font-size: 15px;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -138,28 +136,41 @@
     margin-bottom: 5px;
 }
 
-/* Move Sweet Croffles section slightly to the right */
-#sweet-croffles {
-    max-width: 900px;
-    margin: 0 auto;
-    transform: translateX(40px);
-}
 
 #sweet-croffles h2 {
     font-size: 35px; 
-    margin-right: 60px;
+    margin-right: 20px;
     margin-bottom: -10px;
 
 }
-#savory-croffles {
+#sweet-croffles, #savory-croffles {
     max-width: 900px;
     margin: 0 auto;
-    transform: translateX(40px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Change from space-between to center */
+    gap: 40px;
+}
+
+
+#sweet-croffles img, #savory-croffles img {
+    height: 421.3px;
+    width: 253.55px;
+    margin-right: 20px;
+}
+
+#sweet-croffles .menu-text, #savory-croffles .menu-text {
+    max-width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #savory-croffles h2 {
     font-size: 40px; 
-    margin-right: 60px;
+    margin-right: 20px;
     margin-bottom: -10px;
 }
 
