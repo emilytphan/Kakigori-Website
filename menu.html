@@ -42,6 +42,11 @@
             border-color: #6a0572;
         }
 
+ @media screen and (max-width: 768px) {
+    .menu-section {
+        flex-direction: column;
+    }
+}
 .menu-section {
     display: flex;
     align-items: center;
@@ -107,8 +112,10 @@
 }
 
 #sweet-croffles h2 {
-    font-size: 40px; 
+    font-size: 35px; 
     margin-right: 60px;
+    margin-bottom: -10px;
+
 }
 #savory-croffles {
     max-width: 900px;
@@ -119,6 +126,7 @@
 #savory-croffles h2 {
     font-size: 40px; 
     margin-right: 60px;
+    margin-bottom: -10px;
 }
 
 #coffee ul {
@@ -204,19 +212,18 @@
 }
 .flavors li {
     display: flex;
-    justify-content: space-between; /* Ensures name and price are spaced apart */
+    justify-content: space-between; /* Aligns names and prices */
     width: 100%;
     white-space: nowrap;
-    gap: 208px;
     font-size: 18px;
+    gap: 40px; /* Matches the toppings layout */
 }
 
-/* Ensure flavor price aligns with the rightmost column */
-.flavors li span:last-child {
-    text-align: right;
-    width: 120px; /* Adjust to match the toppings column */
-    display: inline-block;
+/* Ensure equal spacing between name and price */
+.flavors li span:first-child {
+    padding-right: 10px; /* Adds spacing before the price */
 }
+
 
 
 .sauce li {
@@ -279,9 +286,9 @@ footer {
         <h1>Our Menu</h1>
         <div class="menu-categories">
             <a href="#bingsu">Bingsu</a> |
-            <a href="#sweet-croffles">Sweet Croffles/Shokupan</a> |
+            <a href="#sweet-croffles">Sweetside Toastery</a> |
             <a href="#softserve">SoftServe</a> |
-            <a href="#savory-croffles">Savory Croffles/Shokupan</a> |
+            <a href="#savory-croffles">Savory Toastery</a> |
             <a href="#coffee">Coffee</a> |
             <a href="#tea">Tea</a> |
             <a href="#non-coffee">Non-Coffee</a>
@@ -313,7 +320,8 @@ footer {
     <section id="sweet-croffles" class="menu-section">
         <img src="./imgs/croffles.png" alt="Croffle Image">
         <div class="menu-text"> 
-            <h2>Sweet Croffles/Shokupan</h2>
+            <h2>Sweetside Toastery</h2>
+            <h3>Choice of Shokupan or Croffle</h3>
             <ul>
                 <li><span>Pandan Lava</span> $11</li>
                 <li><span>Thai Tea Lava</span> $11</li>
@@ -382,7 +390,8 @@ footer {
     <section id="savory-croffles" class="menu-section">
         <img src="./imgs/crofflesS.png" alt="Croffle Image">
         <div class="menu-text"> 
-            <h2>Savory Croffles/Shokupan</h2>
+            <h2>Savory Toastery</h2>
+            <h3>Choice of Shokupan or Croffle</h3>
             <ul>
                 <li><span>Takoyakii</span> $13</li>
                 <li><span>Floss It</span> $11</li>
