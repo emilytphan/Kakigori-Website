@@ -347,6 +347,7 @@ img {
         overflow: hidden;
         margin: 0 !important;
         padding: 0 !important;
+        background-color: rgba(217,213,204,255);
 
     }
     #featured-menu img {
