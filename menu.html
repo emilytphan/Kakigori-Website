@@ -43,8 +43,42 @@
         }
 
  @media screen and (max-width: 768px) {
+    .menu-section img {
+        display:none;
+    }
     .menu-section {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    .menu-text {
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+    }
+    .menu-text h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .menu-text ul {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+    }
+    .menu-text li {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .menu-text li span {
+        display: inline-block;
+        width: auto;
+        padding: 0 10px;
     }
 }
 .menu-section {
