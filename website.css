@@ -96,13 +96,14 @@ img {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 10px 12px;
     }
 
     .nav-links-left-website,
     .nav-links-right-website {
         display: flex;
-        gap: 10px;
+        gap: 5px;
+        font-size: 14px;
     }
 
     .nav-links-left-website {
@@ -112,9 +113,12 @@ img {
     .nav-links-right-website {
         justify-content: flex-end;
     }
-
+    .logo-website {
+        flex-grow: 0;
+        margin: 0 5px;
+    }
     .logo-website img {
-        width: 120px;
+        width: 80px;
     }
 }
 
@@ -222,7 +226,7 @@ img {
         font-size: 34px;
     }
     .hero .description {
-        font-size: 18px;
+        font-size: 20px;
         max-width: 90%;
         margin: 0 auto;
         text-align: center;
@@ -231,11 +235,12 @@ img {
         flex-direction: row;
         gap: 6px;
         justify-content: center;
+        margin-top: 20px;
     }
     .cta-button {
-        font-size: 12px;
-        padding: 6px 10px;
-        max-width: 160px;
+        font-size: 8px;
+        padding: 4px 8px;
+        max-width: 150px;
     }
 }
 .cta-button {
@@ -334,10 +339,6 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    #featured-menu img {
-        object-position: right;
-        transform: scale(1);
-    }
 
     .menu-description {
         width: 100%;
