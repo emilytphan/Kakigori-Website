@@ -103,23 +103,23 @@ img {
     .nav-links-left-website li a,
     .nav-links-right-website li a{
         display: flex;
-        gap: 5px;
-        font-size: 14px;
+        gap: 4px;
+        font-size: 12px;
     }
     .nav-links-left-website,
     .nav-links-right-website {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 10px;
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 8px;
     }
     .logo-website {
         flex-grow: 0;
         margin: 0 5px;
     }
     .logo-website img {
-        width: 70px;
+        width: 80px;
     }
 }
 
@@ -342,15 +342,14 @@ img {
     #featured-menu {
         position: relative;
         width: 100%;
-        height: 120vh;
+        min-height: 100vh;
     }
     #featured-menu img {
         width: 100%;
-        height: 120vh;
+        height: 100vh;
         object-fit: cover;
         object-position: center;
         display: block;
-        transform: none;
         z-index: -1;
     }
     .menu-description {
@@ -442,7 +441,7 @@ img {
     }
     .about-text p {
         font-size: 16px;
-        line-height: 1.6;
+        line-height: 1.5;
     }
 }
 #contact {
