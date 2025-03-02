@@ -49,20 +49,20 @@
     .menu-section {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
         width: 100%;
         max-width: 100%;
-        padding: 0 10px;
+        padding: 0 15px;
     }
     .menu-text {
-        width: 90%;
-        max-width: 600px;
-        text-align: center;
-        margin-left: 10px;
+        width: 100%;
+        max-width: 100%;
+        text-align: left;
+        margin-left: 0;
     }
     .menu-text h2 {
-        font-size: 28px;
+        font-size: 22px;
         margin-bottom: 10px;
     }
     .menu-text ul {
@@ -71,9 +71,9 @@
         width: 100%;
     }
     .menu-text li {
-        font-size: 18px;
+        font-size: 16px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 100%;
         margin-bottom: 5px;
     }
@@ -83,18 +83,13 @@
         padding: 0 5px;
     }
 
-    #coffee, #non-coffee {
+    #coffee, #non-coffee, #softserve {
         text-align: left;
         max-width: 90%;
         margin: 0 auto;
         padding-left: 10px;
     }
-    #softserve {
-        text-align: left;
-        max-width: 90%;
-        margin: 0 auto;
-        padding-left: 10px;
-    }
+    
     #softserve ul, #coffee ul, #non-coffee ul {
         padding: 0;
         text-align: left;
@@ -102,9 +97,11 @@
         max-width: 600px;
         margin: 0 auto;
     }
+    
     #softserve ul {
-        margin-right: 35px;
+        margin-right: 0;
     }
+    
     #coffee ul, #non-coffee ul {
         padding: 0;
         text-align: left;
@@ -112,10 +109,11 @@
         max-width: 100%;
         margin-left: 0;
     }
-    #coffee li, #non-coffee li {
-        font-size: 14px;
+    
+    #coffee li, #non-coffee li, #softserve li {
+        font-size: 16px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 100%;
         margin-bottom: 4px;
     }
@@ -128,19 +126,17 @@
         gap: 3px;
         max-width: 100%;
     }
-
     .toppings-container ul, .sauce ul {
         width: 100%;
         text-align: left;
         padding: 0;
     }
-
     .flavors li, .toppings-column li, .sauce-column li {
         margin-bottom: 2px;
-        font-size: 14px;
+        font-size: 15px;
     }
+}
 
- }
 .menu-section {
     display: flex;
     align-items: center;
