@@ -7,7 +7,6 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 img {
@@ -346,6 +345,9 @@ img {
         width: 100%;
         min-height: 65vh;
         overflow: hidden;
+        margin: 0 !important;
+        padding: 0 !important;
+
     }
     #featured-menu img {
         width: 100%;
@@ -362,9 +364,9 @@ img {
         text-align: center;
         left: 50%;
         top: 50%;
-
         transform: translate(-50%, -50%);
-        margin: 0;
+        margin: 0 auto !important;
+        padding: 0 !important;
     }
     .menu-description h3 {
         font-size: 24px;
