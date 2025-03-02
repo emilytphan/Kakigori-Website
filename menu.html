@@ -53,7 +53,7 @@
         text-align: center;
         width: 100%;
         max-width: 100%;
-        padding: 0 15px;
+        padding: 0 10px;
     }
     .menu-text {
         width: 90%;
@@ -73,23 +73,28 @@
     .menu-text li {
         font-size: 18px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
         margin-bottom: 5px;
     }
     .menu-text li span {
         display: inline-block;
         width: auto;
-        padding: 0 10px;
+        padding: 0 5px;
     }
 
-    #softserve, #coffee, #non-coffee {
-        text-align: center;
+    #coffee, #non-coffee {
+        text-align: left;
         max-width: 90%;
         margin: 0 auto;
-        padding-left: 5px;
+        padding-left: 10px;
     }
-
+    #softserve {
+        text-align: left;
+        max-width: 90%;
+        margin: 0 auto;
+        padding-left: 10px;
+    }
     #softserve ul, #coffee ul, #non-coffee ul {
         padding: 0;
         text-align: left;
@@ -100,43 +105,42 @@
     #softserve ul {
         margin-right: 35px;
     }
-
- #coffee ul, #non-coffee ul {
-    padding: 0;
-    text-align: left;
-    width: 100%;
-    max-width: 600px;
-    margin-left: 0;
- }
-    #softserve li, #coffee li, #non-coffee li {
+    #coffee ul, #non-coffee ul {
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    #coffee li, #non-coffee li {
+        font-size: 14px;
         display: flex;
         justify-content: space-between;
         width: 100%;
-        max-width: 90%;
-        margin: 0 auto 5px auto;
+        margin-bottom: 4px;
     }
     
     /* Adjust Softserve Layout */
     .toppings-container, .sauce {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        gap: 5px; /* Reduce spacing */
+        text-align: left;
+        gap: 3px;
         max-width: 100%;
     }
 
     .toppings-container ul, .sauce ul {
         width: 100%;
-        text-align: center;
+        text-align: left;
         padding: 0;
     }
-    #softserve .menu-section {
-        margin-right: 30px;
-    }
+
     .flavors li, .toppings-column li, .sauce-column li {
-        margin-bottom: 3px; /* Reduce gaps */
+        margin-bottom: 2px;
+        font-size: 14px;
     }
-}
+
+ }
 .menu-section {
     display: flex;
     align-items: center;
