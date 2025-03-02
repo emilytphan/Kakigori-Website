@@ -78,6 +78,34 @@
         width: auto;
         padding: 0 10px;
     }
+    #softserve, #coffee, #non-coffee {
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #softserve ul, #coffee ul, #non-coffee ul {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #softserve li, #coffee li, #non-coffee li {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto 5px auto;
+    }
+
+    /* Fix spacing for pricing in Softserve and Coffee */
+    .flavors li span:first-child, 
+    .toppings-column li span:first-child, 
+    .sauce-column li span:first-child {
+        padding-right: 15px;
+    }
 }
 .menu-section {
     display: flex;
