@@ -42,15 +42,10 @@
             border-color: #6a0572;
         }
 
- @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
     .menu-section img {
         display: none !important;
     }
-    /* Hide all price elements in the menu */
-.menu-text li span:last-child {
-    display: none;
-}
-
     .menu-section {
         display: flex;
         flex-direction: column;
@@ -65,6 +60,7 @@
         max-width: 100%;
         text-align: left;
         margin-left: 0;
+        font-size: 16px;
     }
     .menu-text h2 {
         font-size: 22px;
@@ -88,6 +84,12 @@
         padding: 0 5px;
     }
 
+    /* Hide all prices in menu */
+    .menu-text li span:last-child {
+        display: none;
+    }
+    
+    /* Align Coffee, Non-Coffee, and Softserve properly */
     #coffee, #non-coffee, #softserve {
         text-align: left;
         max-width: 90%;
@@ -141,6 +143,7 @@
         font-size: 15px;
     }
 }
+
 
 .menu-section {
     display: flex;
@@ -331,8 +334,6 @@
 .flavors li span:first-child {
     padding-right: 10px; /* Adds spacing before the price */
 }
-
-
 
 .sauce li {
     display: flex;
