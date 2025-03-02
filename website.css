@@ -107,6 +107,7 @@ img {
         background-color: transparent;
         padding: 0;
         text-align: center;
+        font-size: 14px;
     }
 
     .menu-toggle {
@@ -114,7 +115,7 @@ img {
     }
 
     .logo-website img {
-        width: 150px;
+        width: 100px;
     }
 }
 
@@ -222,15 +223,15 @@ img {
     }
     .hero .description {
         font-size: 18px;
-        max-width: 80%;
+        max-width: 100%;
     }
     .button-group {
         flex-direction: row;
         gap: 6px;
     }
     .cta-button {
-        font-size: 14px;
-        padding: 6px 12px;
+        font-size: 12px;
+        padding: 6px 10px;
         max-width: 160px;
     }
 }
@@ -330,13 +331,26 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    #featured-menu img {
+        object-position: right;
+        transform: scale(1.5);
+    }
+
+    .menu-description {
+        width: 100%;
+        max-width: 90%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .menu-description h3 {
         font-size: 24px;
     }
-    .menu-description p {
+    .menu.description p {
         font-size: 16px;
     }
 }
+
 /*About me */
 
 #about {
