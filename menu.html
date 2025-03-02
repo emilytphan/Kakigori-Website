@@ -46,6 +46,11 @@
     .menu-section img {
         display: none !important;
     }
+    /* Hide all price elements in the menu */
+.menu-text li span:last-child {
+    display: none;
+}
+
     .menu-section {
         display: flex;
         flex-direction: column;
@@ -404,17 +409,17 @@ footer {
         <div class="menu-text">
             <h2>Bingsu</h2>
             <ul>
-                <li><span>Mango Sticky Rice</span> S $13 | L $17</li>
-                <li><span>S.O.C.</span> S $12 | L $17</li>
-                <li><span>Mango Cheesecake</span> S $12| L $17</li>
-                <li><span>Choco Malt & Oreo</span> S $12 | L $17</li>
-                <li><span>Watermelon</span> S $12 | L $19</li>
-                <li><span>Thai Tea</span> S $11</li>
-                <li><span>Taro</span> S $11</li>
-                <li><span>Matcha</span> S $11</li>
-                <li><span>Vietnamese Coffee</span> S $11</li>
-                <li><span>Coconut</span>S $12</li>
-                <li><span>Edible Flowers</span> S $13.50</li>
+                <li><span>Mango Sticky Rice</span> <span>S $13 | L $17 </span></li>
+                <li><span>S.O.C.</span> <span>S $12 | L $17 </span></li>
+                <li><span>Mango Cheesecake</span> <span>S $12| L $17</span></li>
+                <li><span>Choco Malt & Oreo</span> <span> S $12 | L $17</span></li>
+                <li><span>Watermelon</span>  <span>S $12 | L $19 </span></li>
+                <li><span>Thai Tea</span> <span>S $11</span> </li>
+                <li><span>Taro</span> <span>S $11 </span></li>
+                <li><span>Matcha</span>  <span>S $11</span></li>
+                <li><span>Vietnamese Coffee</span> <span>S $11</span></li>
+                <li><span>Coconut</span> <span>S $12</span></li>
+                <li><span>Edible Flowers</span> <span>S $13.50 </span></li>
             </ul>
         </div>
     </section>
@@ -426,15 +431,15 @@ footer {
             <h2>Sweetside Toastery</h2>
             <h3>Choice of Shokupan or Croffle</h3>
             <ul>
-                <li><span>Pandan Lava</span> $11</li>
-                <li><span>Thai Tea Lava</span> $11</li>
-                <li><span>Black Lava</span> $11</li>
-                <li><span>Mango Sticky Rice</span> $13</li>
-                <li><span>Strawberries & Cheesecake</span> $12</li>
-                <li><span>Malt & Oreo Marshmallow</span> $11</li>
-                <li><span>Matcha Redbean & Mochi</span> $11</li>
-                <li><span>Sweet Taro & Redbean</span> $11</li>
-                <li><span>Black Sesame Redbean & Mochi</span> $11</li>
+                <li><span>Pandan Lava</span> <span>$11</span></li>
+                <li><span>Thai Tea Lava</span> <span>$11</span></li>
+                <li><span>Black Lava</span> <span>$11</span></li>
+                <li><span>Mango Sticky Rice</span> <span>$13</span></li>
+                <li><span>Strawberries & Cheesecake</span> <span>$12</span></li>
+                <li><span>Malt & Oreo Marshmallow</span> <span>$11</span></li>
+                <li><span>Matcha Redbean & Mochi</span> <span>$11</span></li>
+                <li><span>Sweet Taro & Redbean</span> <span>$11</span></li>
+                <li><span>Black Sesame Redbean & Mochi</span> <span>$11</span></li>                
             </ul>
         </div>
     </section>
@@ -474,17 +479,19 @@ footer {
                 <h4>Flavored Condensed Milk:</h4>
                 <div class="sauce">
                     <ul class="sauce-column">
-                        <li><span>Thai Tea</span> $1</li>
-                        <li><span>Black Sesame</span> $1</li>
-                        <li><span>Strawberry</span>$1</li>
-                        <li><span>Matcha</span> $1</li>
-                        <li><span>Chocolate Malt</span> $1</li>
+                        <li><span>Thai Tea</span> <span>$1</span></li>
+                        <li><span>Black Sesame</span> <span>$1</span></li>
+                        <li><span>Strawberry</span> <span>$1</span></li>
+                        <li><span>Matcha</span> <span>$1</span></li>
+                        <li><span>Chocolate Malt</span> <span>$1</span></li>
+                        
                     </ul>
                     <ul class="sauce-column">
-                        <li><span>Coconut Milk</span>$1</li>
-                        <li><span>Vietnamese Cofee</span>$1</li>
-                        <li><span>Ube</span> $1</li>
-                        <li><span>Plain</span>$1</li>
+                        <li><span>Coconut Milk</span> <span>$1</span></li>
+                        <li><span>Vietnamese Coffee</span> <span>$1</span></li>
+                        <li><span>Ube</span> <span>$1</span></li>
+                        <li><span>Plain</span> <span>$1</span></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -496,13 +503,14 @@ footer {
             <h2>Savory Toastery</h2>
             <h3>Choice of Shokupan or Croffle</h3>
             <ul>
-                <li><span>Takoyakii</span> $13</li>
-                <li><span>Floss It</span> $11</li>
-                <li><span>Cheesy Bacon</span> $11</li>
-                <li><span>Cheesy Potato</span> $11</li>
-                <li><span>Corn Cheese</span> $11</li>
-                <li><span>Cheesy Ham</span> $11</li>
-                <li><span>Cucumber Cream Cheese</span> $9.50</li>
+                <li><span>Takoyakii</span> <span>$13</span></li>
+                <li><span>Floss It</span> <span>$11</span></li>
+                <li><span>Cheesy Bacon</span> <span>$11</span></li>
+                <li><span>Cheesy Potato</span> <span>$11</span></li>
+                <li><span>Corn Cheese</span> <span>$11</span></li>
+                <li><span>Cheesy Ham</span> <span>$11</span></li>
+                <li><span>Cucumber Cream Cheese</span> <span>$9.50</span></li>
+                
             </ul>
         </div>
     </section>
@@ -512,14 +520,15 @@ footer {
         <div class="menu-text"> 
             <h2>Coffee</h2>
             <ul>
-                <li><span>Latte/Cappucino</span> S $4.75 | M $5 | L $5.5</li>
-                <li><span>Choco Malt Mocha</span> S $5.25 | M $5.75 | L $6.25</li>
-                <li><span>Ube-long-to-me Latte</span> S $5.25 | M $5.75 | L $6.25</li>
-                <li><span>Pandan Latte</span> S $5.25 | M $5.75 | L $6.25</li>
-                <li><span>Matcha Espresso</span> S $5.50 | M $6.25 | L $6.75</li>
-                <li><span>Black Sesame Espresso</span> S $5.50 | M $6.25 | L $6.75</li>
-                <li><span>Bingsu Affogato</span> S $7.50 | M $8.25 | L $8.70</li>
-                <li><span>Americano</span> $4</li>
+                <li><span>Latte/Cappucino</span> <span>S $4.75 | M $5 | L $5.5</span></li>
+                <li><span>Choco Malt Mocha</span> <span>S $5.25 | M $5.75 | L $6.25</span></li>
+                <li><span>Ube-long-to-me Latte</span> <span>S $5.25 | M $5.75 | L $6.25</span></li>
+                <li><span>Pandan Latte</span> <span>S $5.25 | M $5.75 | L $6.25</span></li>
+                <li><span>Matcha Espresso</span> <span>S $5.50 | M $6.25 | L $6.75</span></li>
+                <li><span>Black Sesame Espresso</span> <span>S $5.50 | M $6.25 | L $6.75</span></li>
+                <li><span>Bingsu Affogato</span> <span>S $7.50 | M $8.25 | L $8.70</span></li>
+                <li><span>Americano</span> <span>$4</span></li>
+                
             </ul>
         </div>
     </section>
@@ -529,16 +538,16 @@ footer {
         <div class="menu-text"> 
             <h2>Tea</h2>
             <ul>
-                <li><span>Classic</span> $6</li>
-                <li><span>Cheese Cream Tea</span> $6.50</li>
-                <li><span>Jasmine Green Milk Tea</span> $6</li>
-                <li><span>Brown Sugar Classic</span> $6</li>
-                <li><span>Super Fruit Tea</span> $7</li>
-                <li><span>Lemon Unbeelievable</span> $6.50</li>
-                <li><span>P.L.G</span>$6</li>
-                <li><span>Lady Bug</span> $6</li>
-                <li><span>White Rabbit Milk Tea</span>$6</li>
-            </ul>
+                <li><span>Classic</span> <span>$6</span></li>
+                <li><span>Cheese Cream Tea</span> <span>$6.50</span></li>
+                <li><span>Jasmine Green Milk Tea</span> <span>$6</span></li>
+                <li><span>Brown Sugar Classic</span> <span>$6</span></li>
+                <li><span>Super Fruit Tea</span> <span>$7</span></li>
+                <li><span>Lemon Unbeelievable</span> <span>$6.50</span></li>
+                <li><span>P.L.G</span> <span>$6</span></li>
+                <li><span>Lady Bug</span> <span>$6</span></li>
+                <li><span>White Rabbit Milk Tea</span> <span>$6</span></li>
+                
         </div>
     </section>
 
@@ -547,18 +556,19 @@ footer {
         <div class="menu-text"> 
             <h2>Non-Coffee</h2>
             <ul>
-                <li><span>Ovaltine Latte</span> S $4.75 | M $5.5 | L $6.25</li>
-                <li><span>Black Sesame Latte</span> S $4.75 | M $5.5 | L $6.25</li>
-                <li><span>Hot Chocolate</span> S $4 | M $4.5 | L $5</li>
-                <li><span>London Fog Latte</span> S $4.75 | M $5.50 | L $6</li>
-                <li><span>Bangkok Fog Latte</span> S $4.75 | M $5.50 | L $6</li>
-                <li><span>Tokyo Fog Latte</span> S $4.75 | M $5.50 | L $6</li>
-                <li><span>SeaSalt Cream Top Thai Tea</span> $6</li>
-                <li><span>Lychee Thai Tea</span> $6</li>
-                <li><span>Coconut Milk Thai Tea</span> $6</li>
-                <li><span>Mango Yakult</span>$7</li>
-                <li><span>Strawberries Yakult</span>$7</li>
-                <li><span>Hot Tea</span>$3.5</li>
+                <li><span>Ovaltine Latte</span> <span>S $4.75 | M $5.5 | L $6.25</span></li>
+                <li><span>Black Sesame Latte</span> <span>S $4.75 | M $5.5 | L $6.25</span></li>
+                <li><span>Hot Chocolate</span> <span>S $4 | M $4.5 | L $5</span></li>
+                <li><span>London Fog Latte</span> <span>S $4.75 | M $5.50 | L $6</span></li>
+                <li><span>Bangkok Fog Latte</span> <span>S $4.75 | M $5.50 | L $6</span></li>
+                <li><span>Tokyo Fog Latte</span> <span>S $4.75 | M $5.50 | L $6</span></li>
+                <li><span>SeaSalt Cream Top Thai Tea</span> <span>$6</span></li>
+                <li><span>Lychee Thai Tea</span> <span>$6</span></li>
+                <li><span>Coconut Milk Thai Tea</span> <span>$6</span></li>
+                <li><span>Mango Yakult</span> <span>$7</span></li>
+                <li><span>Strawberries Yakult</span> <span>$7</span></li>
+                <li><span>Hot Tea</span> <span>$3.5</span></li>
+                
             </ul>
         </div>
     </section>
