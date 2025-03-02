@@ -100,8 +100,8 @@ img {
         flex-wrap: nowrap;
     }
 
-    .nav-links-left-website,
-    .nav-links-right-website {
+    .nav-links-left-website li a,
+    .nav-links-right-website li a{
         display: flex;
         gap: 5px;
         font-size: 14px;
@@ -343,11 +343,11 @@ img {
 @media screen and (max-width: 768px) {
     #featured-menu img {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         object-fit: cover;
-        object-position: right;
+        object-position: center;
         display: block;
-        transform: scale(1.3);
+        transform: none;
         z-index: -1;
     }
     .menu-description {
