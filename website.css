@@ -7,6 +7,7 @@ body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 img {
@@ -231,6 +232,7 @@ img {
         max-width: 90%;
         margin: 0 auto;
         text-align: center;
+
     }
     .button-group {
         flex-direction: row;
@@ -342,7 +344,7 @@ img {
     #featured-menu {
         position: relative;
         width: 100%;
-        min-height: 100vh;
+        min-height: 65vh;
         overflow: hidden;
     }
     #featured-menu img {
@@ -359,7 +361,10 @@ img {
         max-width: 90%;
         text-align: center;
         left: 50%;
+        top: 50%;
+
         transform: translate(-50%, -50%);
+        margin: 0;
     }
     .menu-description h3 {
         font-size: 24px;

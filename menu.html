@@ -42,23 +42,22 @@
             border-color: #6a0572;
         }
 
- @media screen and (max-width: 768px) {
-    .menu-section img {
-        display: none !important;
-    }
+        @media screen and (max-width: 768px) {
     .menu-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         width: 100%;
         max-width: 100%;
-        margin: 0 auto;
-        padding: 0 10px; /* Ensures no unwanted space */
     }
     .menu-text {
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 600px;
         text-align: center;
     }
     .menu-text h2 {
-        font-size: 20px;
+        font-size: 28px;
         margin-bottom: 10px;
     }
     .menu-text ul {
@@ -67,7 +66,7 @@
         width: 100%;
     }
     .menu-text li {
-        font-size: 15px;
+        font-size: 18px;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -78,6 +77,7 @@
         width: auto;
         padding: 0 10px;
     }
+
     #softserve, #coffee, #non-coffee {
         text-align: center;
         max-width: 90%;
@@ -86,7 +86,7 @@
 
     #softserve ul, #coffee ul, #non-coffee ul {
         padding: 0;
-        text-align: center;
+        text-align: left;
         width: 100%;
         max-width: 600px;
         margin: 0 auto;
@@ -99,12 +99,19 @@
         max-width: 90%;
         margin: 0 auto 5px auto;
     }
+    
+    /* Adjust Softserve Layout */
+    .toppings-container, .sauce {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 
-    /* Fix spacing for pricing in Softserve and Coffee */
-    .flavors li span:first-child, 
-    .toppings-column li span:first-child, 
-    .sauce-column li span:first-child {
-        padding-right: 15px;
+    .toppings-container ul, .sauce ul {
+        width: 100%;
+        text-align: center;
+        padding: 0;
     }
 }
 .menu-section {
