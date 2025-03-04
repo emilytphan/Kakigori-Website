@@ -54,21 +54,17 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(button2);
 
     // Smooth scrolling with offset (for About Us and Contact links)
-    const links = document.querySelectorAll('a[href^="#about"]');
-
-    links.forEach(link => {
-        link.addEventListener('click', function (e) {
-            // Prevent default anchor click behavior
-            e.preventDefault();
-
-            // Get the target element (section)
-            const target = document.querySelector(this.getAttribute('href'));
-
-            // Scroll with an offset of 100px (change this value as needed)
-            window.scrollTo({
-                top: target.offsetTop - 100, // Adjust this value to move it up
-                behavior: 'smooth'
-            });
+    document.querySelectorAll('a[href^="#about"], a[href^="#contact"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default anchor click behavior
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100, // Adjust for navbar height
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
