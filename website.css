@@ -355,7 +355,7 @@ img {
     #featured-menu {
         position: relative;
         width: 100%;
-        min-height: 65vh;
+        min-height: 50vh;
         overflow: hidden;
         margin: 0 !important;
         padding: 0 !important;
