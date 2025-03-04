@@ -99,6 +99,7 @@ img {
         justify-content: space-between;
         padding: 10px 12px;
         flex-wrap: nowrap;
+        z-index: 1000;
     }
 
     .nav-links-left-website li a,
@@ -270,7 +271,7 @@ img {
 #featured-menu {
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 80vh;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -279,7 +280,7 @@ img {
 
 #featured-menu img {
     width: 100%;
-    height: 85vh;
+    height: 80vh;
     object-fit: cover;
     object-position: center;
     display: block;
@@ -392,6 +393,8 @@ img {
     justify-content: center; /* Centers content */
     align-items: center;
     text-align: left;
+    position: relative;
+    z-index: 10;
 }
 
 .about-container {
@@ -437,6 +440,10 @@ img {
         justify-content: center;
         align-items: center;
         text-align: center;
+        position: relative;
+        z-index: 10;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .about-container {
         display: flex;
