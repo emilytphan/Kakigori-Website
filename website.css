@@ -140,7 +140,7 @@ img {
     background-repeat: no-repeat;
     color: #fff;
     padding: 50px 20px;
-    height: 390px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,7 +272,7 @@ img {
 #featured-menu {
     position: relative;
     width: 100vw;  /* Full width */
-    height: 85vh;  /* Adjust height if needed */
+    height: 70vh;  /* Adjust height if needed */
     overflow: hidden;
     padding: 0;
     margin: 0;
