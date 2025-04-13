@@ -26,6 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Cycle through images
         currentIndex = (currentIndex + 1) % images.length; // Loop back to the first image
     }
+// Preload all images first
+images.forEach(src => {
+    const img = new Image();
+    img.src = src;
+});
 
     // Change background every 3 seconds (3000ms)
     setInterval(changeBackground, 3000);
