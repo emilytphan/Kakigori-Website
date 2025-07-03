@@ -108,13 +108,19 @@ img {
         gap: 7px;
         font-size: 15px;
     }
+    .nav-links-left-website li a {
+        margin-left: 60px;
+    }
+    .nav-links-right-website li a{ 
+        margin-right: 60px;
+    }
     .nav-links-left-website,
     .nav-links-right-website {
         display: flex;
         list-style: none;
         padding: 0;
         margin: 0;
-        gap: 11px;
+        gap: 0px;
     }
     .logo-website {
         flex-grow: 0;
