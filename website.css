@@ -110,7 +110,7 @@ img {
     }
     .navbar-container {
         justify-content: center;
-        gap: 30px; /* adjust to bring links closer to logo */
+        gap: 20x; /* adjust to bring links closer to logo */
     }
     
     .nav-links-left-website li a,
