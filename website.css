@@ -110,13 +110,13 @@ img {
     }
     .navbar-container {
         justify-content: center;
-        gap: 35px; /* adjust to bring links closer to logo */
+        gap: 30px; /* adjust to bring links closer to logo */
     }
     
     .nav-links-left-website li a,
     .nav-links-right-website li a{
         display: flex;
-        font-size: 13px;
+        font-size: 12px;
     }
     .nav-links-left-website,
     .nav-links-right-website {
@@ -124,14 +124,14 @@ img {
         list-style: none;
         padding: 0;
         margin: 0;
-        gap: 25px;
+        gap: 20px;
     }
     .logo-website {
         flex-grow: 0;
         margin: 0 10px;
     }
     .logo-website img {
-        width: 88px;
+        width: 90px;
     }
 }
 
