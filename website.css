@@ -97,7 +97,6 @@ img {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 14px 17px;
         flex-wrap: nowrap;
         z-index: 1000;
     }
@@ -105,14 +104,13 @@ img {
     .nav-links-left-website li a,
     .nav-links-right-website li a{
         display: flex;
-        gap: 7px;
-        font-size: 13px;
+        font-size: 12px;
     }
     .nav-links-left-website li a {
-        margin-left: 60px;
+        margin-left: 50px;
     }
     .nav-links-right-website li a{ 
-        margin-right: 60px;
+        margin-right: 50px;
     }
     .nav-links-left-website,
     .nav-links-right-website {
