@@ -37,6 +37,14 @@ img {
     width: 97.96%;
     flex-wrap: wrap;
 }
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .nav-links-left-website,
 .nav-links-right-website {
@@ -96,17 +104,15 @@ img {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: nowrap;
         z-index: 1000;
     }
-    .container-website {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .navbar-container {
         justify-content: center;
-        gap: 20px; /* adjust this for spacing */
+        gap: 35px; /* adjust to bring links closer to logo */
     }
+    
     .nav-links-left-website li a,
     .nav-links-right-website li a{
         display: flex;
@@ -118,11 +124,11 @@ img {
         list-style: none;
         padding: 0;
         margin: 0;
-        gap: 20px;
+        gap: 25px;
     }
     .logo-website {
         flex-grow: 0;
-        margin: 0 3px;
+        margin: 0 10px;
     }
     .logo-website img {
         width: 88px;
