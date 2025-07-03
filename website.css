@@ -100,17 +100,17 @@ img {
         flex-wrap: nowrap;
         z-index: 1000;
     }
-
+    .container-website {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /* adjust this for spacing */
+    }
     .nav-links-left-website li a,
     .nav-links-right-website li a{
         display: flex;
-        font-size: 12px;
-    }
-    .nav-links-left-website li a {
-        margin-left: 50px;
-    }
-    .nav-links-right-website li a{ 
-        margin-right: 50px;
+        font-size: 13px;
     }
     .nav-links-left-website,
     .nav-links-right-website {
@@ -118,14 +118,14 @@ img {
         list-style: none;
         padding: 0;
         margin: 0;
-        gap: 0px;
+        gap: 20px;
     }
     .logo-website {
         flex-grow: 0;
         margin: 0 3px;
     }
     .logo-website img {
-        width: 80px;
+        width: 88px;
     }
 }
 
